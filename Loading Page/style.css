@@ -1,0 +1,61 @@
+#main{
+    background-color: black;
+    height:800px;
+    width:800px;
+}
+.loader{
+    height:60px;
+    display:flex;
+    align-items: center;
+    gap:3px;
+    margin-top:200px;
+    margin-left:600px;
+
+   }
+.bar{
+    height:5px;
+    width:14px;
+    animation-duration: 0.45s;
+    animation-name:change;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    
+}
+.red{
+    background-color:red;
+    box-shadow: 1px 1px 10px red;
+    animation-delay: 0.10s;
+}
+.orange{
+    background-color:orange;
+    box-shadow: 1px 1px 10px orange;
+    animation-delay:0.20s;
+}
+.yellow{
+    background-color: yellow;
+    box-shadow: 1px 1px 10px yellow;
+    animation-delay:0.25s;
+}
+.green{
+    background-color:green;
+    box-shadow: 1px 1px 10px green;
+    animation-delay: 0.30s;
+}
+.blue{
+    background-color:aqua;
+    box-shadow: 1px 1px 10px aqua;
+    animation-delay: 0.35s;
+}
+.violet{
+    background-color: violet;
+    box-shadow: 1px 1px 10px violet;
+    animation-delay:0.40s;
+}
+@keyframes change{
+    from{
+        height:5px;
+    }
+    to{
+        height:60px;
+    }
+   }
